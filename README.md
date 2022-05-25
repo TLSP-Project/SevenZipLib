@@ -1,4 +1,4 @@
-# SevenZipLib
+# SevenZipLib [![NuGet Version](https://img.shields.io/nuget/v/SevenZipLib.svg)](https://www.nuget.org/packages/SevenZipLib/)
 A wrapper for the 7zip library
 Support windows linux macos
 Based on 7zip console alone.
