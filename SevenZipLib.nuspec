@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SevenZipLib</id>
+    <version>1.4.0</version>
+    <title></title>
+    <authors>TLSP Dev</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+A wrapper for the 7zip library.
+Support windows linux macos.
+Based on 7zip console alone.
+</description>
+    <license type="expression">LGPL-2.1-or-later</license>
+    <dependencies>
+      <group targetFramework=".NETStandard1.3" />
+    </dependencies>
+    <repository type="git" url="https://github.com/TLSPDev/SevenZipLib.git" branch="main" />
+    <projectUrl>https://github.com/TLSPDev/SevenZipLib</projectUrl>
+    <tags>7zip SevenZip 7z macos linux windows</tags>
+    
+  </metadata>
+  <files>
+    <file src="SevenZipLib\bin\Release\" target="lib\" />
+    <file src="7Zip\CPP\7zip\Bundles\Alone2\x64\7zz.dll" target="runtimes/win-x64/native/7zz.dll" />
+    <file src="7Zip\CPP\7zip\Bundles\Alone2\x86\7zz.dll" target="runtimes/win-x86/native/7zz.dll" />
+    <file src="7Zip\CPP\7zip\Bundles\Alone2\arm64\7zz.dll" target="runtimes/win-arm64/native/7zz.dll" />
+    <file src="7Zip\CPP\7zip\Bundles\Alone2\b\g_arm64\7zz.so" target="runtimes/linux-arm64/native/7zz.so" />
+    <file src="7Zip\CPP\7zip\Bundles\Alone2\b\g_x64\7zz.so" target="runtimes/linux-x64/native/7zz.so" />
+    <file src="7Zip\CPP\7zip\Bundles\Alone2\b\g_x86\7zz.so" target="runtimes/linux-x86/native/7zz.so" />
+    <file src="7Zip\CPP\7zip\Bundles\Alone2\b\m_arm64\7zz.dylib" target="runtimes/osx-arm64/native/7zz.dylib" />
+    <file src="7Zip\CPP\7zip\Bundles\Alone2\b\m_x64\7zz.dylib" target="runtimes/osx-x64/native/7zz.dylib" />
+  </files>
+</package>
